@@ -1,0 +1,110 @@
+'''====coding practice'''
+
+# from datetime import date
+# name=input("enter your name")
+# age=int(input("enter your age"))
+# year_left_for_100_year_old=100-age
+# current_year=date.today().year
+# print("you will be 100 years old in {}".format(current_year+year_left_for_100_year_old))
+#
+# enter_copy_number=int(input("enter copy number"))
+
+'''Ask the user for a number. Depending on whether the number is even or odd, 
+print out an appropriate message to the user. '''
+
+# number=int(input("enter any number"))
+# if number%2==0:
+#     print("even")
+# else:
+#     print("odd")
+
+# num1=int(input("enter first number"))
+# num2=int(input("second first number"))
+# if num1%num2==0:
+#     print("divides evenly")
+# else:
+#     print("not divisible")
+
+''' create a new list with numbers less than given number'''
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# j=int(input("enter any num"))
+# new_list=[i for i in a if i<j]
+# print(new_list)
+
+'''Create a program that asks the user for a number and then prints out a list of all the divisors of that number.'''
+# x=list(range(2,100))
+# print(type(x))
+# num=int(input("enter any number"))
+# for numbers in x:
+#     if numbers%num==0:
+#         print(numbers,end=" ")
+# #or
+# new_list=[number for number in x if number%num==0]
+# print(new_list)
+
+'''Take two lists write a program that returns a list that contains only the elements that are common between the lists '''
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+# new_list=[]
+# for num in a:
+#     if num not in new_list and num in b:
+#         new_list.append(num)
+#
+# print(new_list)
+
+'''Ask the user for a string and print out whether this string is a palindrome or not.'''
+# string1=input("enter any string")
+# s1=""
+# for char in string1:
+#     s1=char+s1
+#
+# if s1==string1:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+'''string reverse using recursion'''
+# def reverse((string1):
+#     if len(string1)==0:
+#         return string1
+#     else:
+#         return reverse(string1[1:])+string1[0]
+#
+# print(reverse("harjinder"))
+
+'''list comprehension'''
+# list1=[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# new_list=[x for x in list1 if x%2==0]
+# print(new_list)
+
+'''Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) 
+and makes a new list of only the first and last elements of the given list'''
+
+# def ele(list1):
+#     return (list1[0],list1[-1])
+#
+# a=[5,10,15,20,25]
+# print(ele(a))
+
+''' find the longest word from a string of words'''
+# string1="this is the longest word in string"
+# list1=string1.split(" ")
+# max_len=0
+# for words in list1:
+#     if len(words) > max_len:
+#         max_len=len(words)
+#         result=words
+#
+# print(result)
+
+'''' count the no of digits in integer'''
+x=int(input("enter any number"))
+count=0
+while x >  0:
+    x=x//10
+    count+=1
+
+print(count)
+
+''' prime number'''
+num=int(input("enter the no to be checked"))
